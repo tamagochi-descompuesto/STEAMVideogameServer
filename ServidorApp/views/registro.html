@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Codificación, diseño responsivo y hojas de estilo necesarias-->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, height=center, initial-scale=1"/>
+        <link rel = "shortcut icon" type = "image/png" href = "/images/IT_Logo.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="/css/styleRegistro.css"/>
+        <title>Regístrate</title>
+    </head>
+
+    <body class="estilo1">
+        <!-- Aquí inicia el header -->
+        <header>
+            <div class="container redondeado2">
+                <!--Inicio de la primera fila-->
+                <div class="row" > 
+                    <!--Registro y logo de STEAM-->
+                    <div class="col" style="margin: auto;">
+                        <h1 class="texto1">REGISTRO DE USUARIO</h1>
+                    </div>
+                    
+                    <div class="col-sm" style="text-align: right;">
+                        <a href="https://movimientosteam.org/">
+                            <img src="/images/logo-steam.png" class="imagen1"/> 
+                        </a>
+                    </div>
+                </div>
+                <!--Aquí termina la primera fila-->
+                
+                <!--Instrucciones-->
+                <p class="texto1">Por favor, llena lo siguientes campos:</p>
+            </div>
+        </header>
+		<!-- Aquí termina el header -->
+        
+        <!--Aquí inicia el formulario-->
+        <form action="registro" method="POST">
+                <div class="container redondeado1" style="background-color: rgb(74, 110, 146);">
+                    <!--Inicia la primera fila del formulario-->
+                    <div class="row">
+                        <!--Nombre de usuario-->
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label><i>Nombre de usuario: *</i></label>
+                                <input type="text" class="form-control" placeholder="Ingresa tu nombre de usuario" id="usernameJugador" name="username" required>
+                            </div>
+                        </div>
+                        
+                        <!--Contraseña-->
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label><i>Contraseña: *</i></label>
+                                <input type="password" class="form-control" placeholder="Ingresa tu contraseña" id="passwordJugador" name="password" required>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Aquí termina la primera fila del formulario-->
+
+                    <!--Inicia la segunda fila del formulario-->
+                    <div class="row">
+                        <!--Fecha de nacimiento-->
+                        <div class="col">
+                            <div class="form-group ">
+                                <label><i>Ingresa tu fecha de nacimiento: *</i></label>	
+                                <br/>
+                                <input type="date" class="form-control" id="fechaNacimientoJugador" name = "fechaNacimiento" required>
+                            </div>
+                        </div>
+                        
+                        <!--Géneros-->							
+                        <div class="col">
+                            <div class="form-select">
+                                <label><i>¿Con qué género te identificas? *</i></label>
+                                <br/>
+                                <fieldset>
+                                    <label>
+                                        <input type="radio" name="genero" value="Masculino">    Masculino   
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="genero" value="Femenino">  Femenino   
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="genero" value="No binario">   No binario  
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="genero" value="Otro">     Otro    
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Aquí termina la segunda fila del formulario-->
+                    
+                    <!--Aquí inicia la tercera fila del formulario-->
+                    <div class="row">
+                        <!--Interéses de carrera-->
+                        <div class="col">
+                            <div class="form-select">
+                                <label><i>¿Qué quieres estudiar cuando seas grande? *</i></label>
+                                <br/>
+                                <select id="carreraInteresInicialFormulario" name="carreraInteresInicial">
+                                    <option value="Ingeniería">Una ingeniería</option>
+                                    <option value="FísicoMatemáticas">Algo de física o matemáticas</option>
+                                    <option value="Salud">Algo relacionado con la salud</option>
+                                    <option value="CienciasSociales">Algo relacionado con las ciencias sociales</option>
+                                    <option value="Arte">Quiero hacer arte</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!--Familia con ingeniería-->
+                        <div class="col">
+                            <div class="form-select">
+                                <label><i>¿Tus padres o algún familiar cercano es ingeniero? *</i></label>
+                                <br/>
+                                <fieldset>
+                                    <label>
+                                        <input type="radio" name="familiarIngeniero" value="Si"> Si
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="familiarIngeniero" value="No"> No
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div> 
+                    <!--Aquí cierra la tercera fila del formulario-->
+                    
+                    <!--Aquí inicia la cuarta fila del formulario-->
+                    <br/>
+                    <div class="row">
+                        <!--Carreras STEAM-->
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label><i>¿Sabes qué es una carrera STEAM?</i></label>
+                                <br/>
+                                <fieldset>
+                                    <label>
+                                        <input type="radio" name="sabesSTEAM" value="Si"> Sí, sé que es una carrera STEAM
+                                    </label>
+                                    <br>
+                                    <label>
+                                        <input type="radio" name="sabesSTEAM" value="No"> No, no tengo idea de lo que es.
+                                    </label>
+                                    <br>
+                                    <label>
+                                        <input type="radio" name="sabesSTEAM" value="Inseguro"> No estoy muy seguro de saberlo o tengo una ligera idea
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        
+                        <!--Preferencia por ingenierías-->
+                        <div class="col">
+                            <div class="form-select">
+                                <label><i>¿Has pensado en estudiar ingeniería? *</i></label>
+                                <br/>
+                                <fieldset>
+                                    <label>
+                                        <input type="radio" name="estudiarIngenieria" value="Si"> Si
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="estudiarIngenieria" value="No"> No
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Aquí cierra la cuarta fila del formulario-->
+
+                <!--Aquí inicia la quinta fila del formulario-->
+                <div class="row">
+                    <!--Escolaridad y nacionalidad-->
+                    <div class="col-sm">
+                        <div class="form-select">
+                            <label><i>Escolaridad: *</i></label>
+                            <br/>
+                            <select id="escolaridadJugador" name="escolaridad">
+                                <option value="Primero de Primaria">Primero de Primaria</option>
+                                <option value="Segundo de Primaria">Segundo de Primaria</option>
+                                <option value="Tercero de Primaria">Tercero de Primaria</option>
+                                <option value="Cuarto de Primaria">Cuarto de Primaria</option>
+                                <option value="Quinto de Primaria">Quinto de Primaria</option>
+                                <option value="Sexto de Primaria">Sexto de Primaria</option>
+                                <option value="Primero de Secundaria">Primero de Secundaria</option>
+                                <option value="Segundo de Secundaria">Segundo de Secundaria</option>
+                                <option value="Tercero de Secundaria">Tercero de Secundaria</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-select">
+                            <!-- Estado en el que reside el usuario -->
+                            <label><i>¿En qué estado vives? *</i></label>
+                            <br/>
+                            <select id="estadoResidenciaJugador" name="estadoResidencia">
+                                <option value="Aguascalientes">Aguascalientes</option>
+                                <option value="Baja California">Baja California</option>
+                                <option value="Baja California Sur">Baja California Sur</option>
+                                <option value="Campeche">Campeche</option>
+                                <option value="Ciudad de México">Ciudad de México</option>
+                                <option value="Coahuila">Coahuila</option>
+                                <option value="Colima">Colima</option>
+                                <option value="Chiapas">Chiapas</option>
+                                <option value="Chihuahua">Chihuahua</option>
+                                <option value="Durango">Durango</option>
+                                <option value="Estado de México">Estado de México</option>
+                                <option value="Guanajuato">Guanajuato</option>
+                                <option value="Guerrero">Guerrero</option>
+                                <option value="Hidalgo">Hidalgo</option>
+                                <option value="Jalisco">Jalisco</option>
+                                <option value="Michoacán">Michoacán</option>
+                                <option value="Morelos">Morelos</option>
+                                <option value="Nayarit">Nayarit</option>
+                                <option value="Nuevo León">Nuevo León</option>
+                                <option value="Oaxaca">Oaxaca</option>
+                                <option value="Puebla">Puebla</option>
+                                <option value="Querétaro">Querétaro</option>
+                                <option value="Quintana Roo">Quintana Roo</option>
+                                <option value="San Luis Potosí">San Luis Potosí</option>
+                                <option value="Sinaloa">Sinaloa</option>
+                                <option value="Sonora">Sonora</option>
+                                <option value="Tabasco">Tabasco</option>
+                                <option value="Tamaulipas">Tamaulipas</option>
+                                <option value="Tlaxcala">Tlaxcala</option>
+                                <option value="Veracruz">Veracruz</option>
+                                <option value="Yucatán">Yucatán</option>
+                                <option value="Zacatecas">Zacatecas</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!--Aquí cierra la quinta fila del formulario-->
+
+                <!--Aquí inicia la sexta fila-->
+                <div class="row">
+                    <!--Correo-->
+                    <div class="col">
+                        <div class="form-group">
+                            <!-- Correo electrónico -->
+                            <label><i>Correo electrónico: *</i></label>
+                            <input type="text" class="form-control" placeholder="Ingresa tu correo electrónico" id="correoJugador" name="correo" required>
+                        </div>
+                    </div>
+                </div>
+                <!--Aquí termina la sexta fila del formulario-->
+                
+                <!--Explicación de campos obligatorios-->
+                <p>* Obligatorio</p>
+                
+                <!--Botones de enviar y limpiar el formulario-->
+                <div class="container" style="text-align: center;">
+                    <button class="btn btn-success" type="submit">Enviar</button>
+                    <button class="btn btn-danger" type="reset">Limpiar</button>
+                    <br/>
+                    <p><a href="principal" style="color: white;">Volver al menú principal</a></p>
+                </div>
+            </div>
+            <!--Aquí termina el container-->
+        </form>
+        <!--Aquí termina el formulario-->
+        <!-- Scripts necesarios -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <%if (error == 1) {%>
+            <script> alert("El usuario y/o el correo electrónico ya se encuentran registrados")</script>
+
+        <%}%>
+        <!--Aquí inicia el footer-->
+        <footer>
+            
+        </footer>
+        <!--Aquí termina el footer-->
+    </body>
+    <!--Aquí termina el body-->
+</html>
+<!--Fin de la página-->     

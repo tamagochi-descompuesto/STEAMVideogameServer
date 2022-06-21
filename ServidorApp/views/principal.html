@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Codificación, diseño responsivo y hojas de estilo necesarias-->
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "shortcut icon" type = "image/png" href = "/images/IT_Logo.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="/css/stylePrincipal.css"/>
+        <title>I.T. Llama a casa</title>
+    </head>
+    <body class="estilo1">
+         <!-- Aquí inicia el header -->
+        <header>
+            <div class="container">
+                <!--Inicio de la primera fila-->
+                <div class="row" > 
+                    <!--Registro y logo de STEAM-->
+                    <div class="col" style="margin: auto;">
+                        <h1 class="texto1">I.T. Llama a casa</h1>
+                    </div>
+                    
+                    <div class="col-sm" style="text-align: right;">
+                        <a href="https://movimientosteam.org/">
+                            <img src="/images/logo-steam.png" class="imagen1"/> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+         <!-- Aquí termina el header -->
+
+        <br/>
+        <div class="container">
+            <!--Aquí inicia la primer fila de la página principal-->
+            <div class="row">
+                <!--Video del juego-->
+                <div class="col">
+                    <video src="/images/juego.mov" width="640" height="360" controls></video>
+                </div>
+                <!--Texto explicativo del juego-->
+                <div class="col-md">
+                    <p class="texto">
+                        I.T., uno de los alienígenas más inteligentes de su planeta ha 
+                        estrellado su nave contra la Tierra y necesita de tu ayuda para 
+                        poder repararla y volver a casa. 
+                        A lo largo de su viaje se encontrará con aliados y enemigos que harán
+                        que su estancia en el planeta Tierra sea más interesante.
+                        ¡Usa el poder de la ciencia y la tecnología para devolver a I.T. a su 
+                        hogar!
+                    </p>
+                </div>
+            <!--Aquí acaba la primer fila de la página principal-->
+            </div>
+        </div>
+
+        <br/>
+        <div class="container">
+            <!--Aquí inicia la segunda fila de la página principal-->
+            <div class="row">
+                <h2>Acerca de nosotros</h2>
+            </div>
+            <!--Aquí acaba la segunda fila de la página principal-->
+        </div>
+
+        <div class="container">
+            <!--Aquí inicia la tercera fila de la página principal-->
+            <div class="row">
+                <!--Texto acerca del equipo de trabajo-->
+                <div class="col-md">
+                    <p class="texto">
+                        Somos un grupo de estudiantes de la carrera
+                        de Ingeniería en Sistemas Computacionales de 
+                        cuarto semestre.
+                        Este videojuego es un proyecto hecho completamente
+                        por nosotros en colaboración con la organización no gubernamental
+                        <b><a href="https://movimientosteam.org/" style="color: white;">Movimiento STEAM</a></b> con la finalidad de
+                        expandir el conocimiento de las carreras de ciencia
+                        y tecnología en las futuras generaciones. Nos ayudarías mucho probando nuestro juego :D.
+                    </p>
+                </div>
+                <!--Imagen del equipo de trabajo-->
+                <div class="col img_centrada">
+                    <img src="/images/ACC.jpeg" width="604" height="249"/>
+                </div>
+            </div>
+            <!--Aquí acaba la tercera fila de la página principal-->
+        </div>
+
+        <br/>
+        <!--Botón para redirigir a la página de registro-->
+        <div class="container" style="text-align: center;">
+                <button class="btn btn-outline-light" value="Input Button" onclick="irRegistro()">Regístrate para descargar el juego</button>
+                <button class= "btn btn-outline-light" value="Input Button" onclick="irPrincipalSTEAM()">Si eres de STEAM, da click aquí</button>
+        </div>
+        <br/>
+
+        <!--Scripts necesarios-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="/js/scriptRegistroPrincipal.js"></script>
+        
+        <!--Aquí inicia el footer-->
+        <footer>
+
+        </footer>
+        <!--Aquí termina el footer-->
+    </body>
+    <!--Fin del body-->
+</html>
+<!--Fin de la página-->

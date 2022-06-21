@@ -1,0 +1,35 @@
+{
+  "name": "servidorapp",
+  "version": "1.0.0",
+  "description": "Servidor de la aplicación web que contiene el formulario que recopilará los datos y los desplegará en un tablero para el socio formador Movimiento STEAM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacqueline-zavala/servidorAplicacionWebSTEAM.git"
+  },
+  "keywords": [
+    "app",
+    "node",
+    "servidor",
+    "videojuego",
+    "STEAM"
+  ],
+  "author": "Jacqueline Zavala, Israel Sánchez, David Rodríguez, Erick Hernández y Erick Bustos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacqueline-zavala/servidorAplicacionWebSTEAM/issues"
+  },
+  "homepage": "https://github.com/jacqueline-zavala/servidorAplicacionWebSTEAM#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "sequelize": "^6.6.2",
+    "tedious": "^11.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
